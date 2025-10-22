@@ -1,0 +1,24 @@
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+
+# Version control and IDE files
+.git/
+.gitignore
+.github/
+.idea/
+.vscode/
+
+# Test scripts and local tools
+helm/
+*.log
+
+# Local configs and secrets
+.env
+.env.*
+!.env.example

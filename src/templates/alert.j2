@@ -1,0 +1,9 @@
+<b>{{ fields.title or "❗️ Alert" }}</b>
+
+<b>Project:</b> {{ event.fields.project or "unknown" }}
+<b>Time:</b> {{ event.timestamp }}
+
+<code>{{ message or "🤷 Empty error message" }}</code>
+{% for message in backlog[:1] %}
+{{ graylog_url }}/messages/{{ message.index }}/{{ message.id }}
+{% endfor %}
