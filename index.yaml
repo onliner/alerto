@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  alerto:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2025-10-27T12:52:28.056548693Z"
+    description: A Helm chart for Kubernetes
+    digest: aa58898b936550d9d0c14f7b3133bcbba659e956c4695c893ba839638b259893
+    name: alerto
+    type: application
+    urls:
+    - https://github.com/onliner/alerto/releases/download/alerto-0.0.1/alerto-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-10-27T12:52:28.056553953Z"
