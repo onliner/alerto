@@ -11,4 +11,21 @@ entries:
     urls:
     - https://github.com/onliner/alerto/releases/download/alerto-0.0.1/alerto-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-27T12:52:28.056553953Z"
+  - apiVersion: v2
+    appVersion: 0.0.1-test.0
+    created: "2025-10-27T14:04:38.523146537Z"
+    description: A lightweight webhook service that receives alert payloads from Graylog,
+      formats them into structured Telegram messages, and sends them via the Telegram
+      Bot API.
+    digest: 8641223da41fe8c5d49d0edfbae988d1931c393d8f932fbe9100a9560553e430
+    keywords:
+    - alerto
+    - graylog
+    name: alerto
+    sources:
+    - https://github.com/onliner/alerto/
+    type: application
+    urls:
+    - https://github.com/onliner/alerto/releases/download/alerto-0.0.1-test.0/alerto-0.0.1-test.0.tgz
+    version: 0.0.1-test.0
+generated: "2025-10-27T14:04:38.523154612Z"
