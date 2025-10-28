@@ -1,0 +1,11 @@
+apiVersion: v2
+name: alerto
+description: A lightweight webhook service that receives alert payloads from Graylog, formats them into structured Telegram messages, and sends them via the Telegram Bot API.
+type: application
+version: 0.0.1
+appVersion: "latest"
+keywords:
+- alerto
+- graylog
+sources:
+- https://github.com/onliner/alerto/
