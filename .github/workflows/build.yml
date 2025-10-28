@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -45,8 +45,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           WITH_V: true
           DEFAULT_BUMP: patch
-          DRY_RUN: ${{ github.ref_name != 'main' && github.ref_name != 'master' }}
-          PRERELEASE: ${{ github.ref_name != 'main' && github.ref_name != 'master' }}
+          DRY_RUN: ${{ github.ref_name != 'master' }}
+          PRERELEASE: ${{ github.ref_name != 'master' }}
           PRERELEASE_SUFFIX: "test"
 
   release-docker:
