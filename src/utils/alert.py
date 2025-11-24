@@ -27,7 +27,7 @@ async def send_alert(payload: WebhookPayload) -> None:
     if len(message) > limit:
         message = message[:limit] + " (truncated...)"
 
-    await telegram.send(render('alert.j2', dict(
+    await telegram.send(render("alert.j2", dict(
         fields=fields,
         message=message,
         event=payload.event,
@@ -37,7 +37,7 @@ async def send_alert(payload: WebhookPayload) -> None:
 
 
 async def send_report(failed: int):
-    await telegram.send(render('dropped.j2', dict(
+    await telegram.send(render("dropped.j2", dict(
         count=failed,
         quip=random.get_dropped_quip(),
     )))

@@ -28,10 +28,10 @@ class Settings:
     message_max_len: int = 512
 
     # Optional Bearer token for webhook authentication
-    auth_token: str = env.get('AUTH_TOKEN')
+    auth_token: str = env.get("AUTH_TOKEN")
 
     # Web URL of the Graylog dashboard (admin panel)
-    graylog_url: str = "https://logs.onliner.by"
+    graylog_url: str = env.get("GRAYLOG_URL")
 
     def validate(self) -> None:
         if not self.chat_id or not self.telegram_token:
