@@ -44,6 +44,7 @@ cp .env.example .env
 Then edit it and set the following variables:
 
 - `AUTH_TOKEN` — Bearer token required for incoming webhook requests
+- `GRAYLOG_URL` — Web URL of the Graylog dashboard (admin panel)
 - `TELEGRAM_TOKEN` — API token from [@BotFather](https://t.me/botfather)
 - `CHAT_ID` — ID of the chat where bug reports should be delivered
 - `MAX_MESSAGES_PER_MINUTE` — Telegram rate limit (messages per minute)
