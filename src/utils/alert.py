@@ -1,4 +1,5 @@
 from pathlib import Path
+from html import escape as html_escape
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -29,7 +30,7 @@ async def send_alert(payload: WebhookPayload) -> None:
 
     await telegram.send(render("alert.j2", dict(
         fields=fields,
-        message=message,
+        message=html_escape(message),
         event=payload.event,
         backlog=payload.backlog,
         graylog_url=settings.graylog_url,
